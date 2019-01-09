@@ -18,3 +18,4 @@ allow system_server theme_data_file:file { create_file_perms relabelto rw_file_p
 # Use HALs
 hal_client_domain(system_server, hal_lineage_livedisplay)
 hal_client_domain(system_server, hal_lineage_touch)
+hal_client_domain(system_server, hal_lineage_trust)
