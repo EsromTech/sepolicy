@@ -16,9 +16,6 @@ allow system_server custom_font_service:service_manager find;
 allow system_server theme_data_file:dir { create_dir_perms relabelto rw_dir_perms };
 allow system_server theme_data_file:file { create_file_perms relabelto rw_file_perms };
 
-# Allow adb related properties to be set
-set_prop(system_server, adbtcp_prop)
-
 # Use HALs
 hal_client_domain(system_server, hal_lineage_livedisplay)
 hal_client_domain(system_server, hal_lineage_touch)
